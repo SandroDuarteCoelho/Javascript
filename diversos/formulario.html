@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+    <script type="text/Javascript">
+    function valida() {
+        var msg=""; // para armazenar a mensagem de erro
+        if(document.registo.nome.value.length==0)
+        {
+            msg=msg+"Nome não inserido!\n";
+        }
+
+        // Testar se o ano tem mais do que 4 digitos
+        if(document.registo.ano.value.length>4)
+        {
+            msg=msg+"O ano tem de ter 4 digitos";
+        } 
+        else if(document.registo.ano.value<=1900)
+        {
+            msg=msg+"O ano deve ser posterior a 1900!\n";
+        }
+
+        if (msg.length>0){  // Verifica se há mensagem
+            alert(msg);  // Apresenta a mensagem de erro
+            return false; //não envia dados
+            }
+            else{
+                return true;
+            }
+        }
+    
+
+    
+    </script>
+		<title>Formulário</title>
+		
+	</head>
+	<body>
+        <!-- Action indica qual o ficheiro onde vai guardar os dados do formulario -->
+        <!-- se o return do onsubmit for falso, o formulario nao é enviado -->
+        <form name="registo" action="guardaform.php" onsubmit="return valida()">
+            Name:<input type="text" name="nome" maxlength="30"><br><br>
+            Ano Nascimento:<input type="text" name="ano" maxlength="6"><br><br>
+            <input type="submit" value="Enviar"> 
+
+        </form>
+
+    
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function fun1()
+        { document.bgColor="red"; }
+
+        function fun2()
+        { document.bgColor="green"; }
+        
+        function fun3()
+        { document.bgColor="yellow";  }
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Utilizador</title>
+</head>
+<body>
+    <h3>Eventos de utilizador (onclick)</h3>
+    <a href="javascript:fun1();">-- Fundo Vermelho --</a>
+    <br><br>
+    <a href="javascript:fun2();">-- Fundo Verde --</a>
+    <br><br>
+    <a href="javascript:fun3();">-- Fundo Amarelo --</a>
+
+    <br><br>
+    <form name="fm">
+
+        <input type="radio" name="campo" onclick="fun1();">Fundo Vermelho<br>
+        <input type="radio" name="campo" onclick="fun2();">Fundo Verde<br>
+        <input type="radio" name="campo" onclick="fun3();">Fundo Amarelo<br>
+
+    </form>
+</body>
+</html>

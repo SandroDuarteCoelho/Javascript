@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>JavaScript</title>
+		<!-- <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
+	</head>
+	<body>
+    <h2>Utilização do javascript</h2>
+    <p id="teste">Alteração do conteudo</p>
+    <!-- innerHTML altera o conteudo do elemento -->
+    <input type="button" value="Clicar" onclick='document.getElementById("teste").innerHTML="Alteração realizada"'>
+
+    <hr>
+    <h3>Alteração de valor de atributo</h3>
+    <img id="lampada" src="desligada.gif">
+    <input type="button" value="Ligar" onclick='document.getElementById("lampada").src="ligada.gif"'>
+    <input type="button" value="Desligar" onclick='document.getElementById("lampada").src="desligada.gif"'>
+    <hr>
+
+    <p>Alteração de estilos CSS</p>
+    <input type="button" value="Aumenta" onclick='document.getElementById("teste").style.fontSize="35px"'>
+    
+    <hr>
+    <p>Ocultar e mostrar elementos</p>
+    <input type="button" value="Esconde" onclick='document.getElementById("lampada").style.display="none"'>
+    <input type="button" value="Mostrar" onclick='document.getElementById("lampada").style.display="block"'>
+
+	</body>
+</html>

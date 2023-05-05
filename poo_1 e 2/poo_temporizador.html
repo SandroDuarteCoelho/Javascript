@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+
+        <script text="text/javascript">
+            function fecha()
+            {
+                document.imagem.src="fechado.jpg";
+                // depois de 3s executa a função abre
+                setTimeout("abre()", 3000);
+            }
+
+            function abre()
+            {
+                document.imagem.src="aberto.jpg";
+                // depois de 3s executa a função fecha
+                setTimeout("fecha()", 3000);
+            }
+
+        </script>
+        <meta charset="utf-8">
+		<title>Animação Interativa</title>
+		
+	</head>
+
+    
+	<body onload="fecha();">
+        <script text="text/javascript">
+        // Permite um carregamento previo das imagens, antes de serem chamadas.
+        img1=new Image();
+        img1.src="aberto.jpg";        
+       
+        img2=new Image();
+        img2.src="fechado.jpg";            
+        </script>
+
+        <img src="aberto.jpg" name="imagem">
+    
+	</body>
+</html>
